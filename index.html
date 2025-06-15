@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="SiveChanyvar" content="width=device-width, initial-scale=1.0">
+    <title>SiveChanyvar|Software Development</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .menu {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: black;
+            display: inline-flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .imgcontact {
+            height: auto;
+            width: 30px;
+            background: transparent;
+        }
+
+        .slide {
+            width: 50%;
+            height: 50%;
+            display: block;
+        }
+        .slideshow-container {
+            width: 50vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            gap:1px;
+            scroll-behavior: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="background-color: lightgray; margin:0%; padding:12px; width:auto; display:flex; justify-content:space-between; ">
+        <div>
+            <a href="#aboutme" class="menu">About me</a>
+            <a href="#project" class="menu">Project</a>
+        </div>
+        <div>
+            <a href="https://github.com/Nyvar" class="menu">Github</a>
+            <a href="#contact" class="menu">Contact Me</a>
+
+        </div>
+    </div style="height:100vh; width:100%; display:flex; align-items:center;">
+
+    <div style="font-size:20px; text-align:center; padding-top:15%; padding-bottom:20%;">
+        <h1 style="">Software</h1>
+        <h1 style=" ">Developer</h1>
+        <a href="#contact">
+            <button>Contact Me</button>
+        </a>
+
+
+    </div>
+
+    <hr>
+    <div id="aboutme" style="display: flex; justify-content:space-between;gap:10%;">
+        <div style="height:auto; width:50vw;border-right:1px solid white">
+            <img src="img/me.JPG" alt="my picture" style="height: 100%; width:100%;">
+        </div>
+        <div style="height:auto; width:50vw;">
+            <h3>about me</h3>
+            <p>I am known as SiveChanyvar. I majoring in Software Development at IT STEP ACADEMY. I aslo educated in
+                Finacial Banking Fresh year at Royal University of Law and Economic. </p>
+        </div>
+    </div>
+    <hr>
+    <div id="project">
+        <button>project</button>
+
+        <div class="slideshow-container">
+            <img class="slide active" src="img/ccharp.jpg" alt="Slide 1">
+            <img class="slide" src="img/c++.jpg" alt="Slide 2">
+            <img class="slide" src="img/js.jpg" alt="Slide 3">
+            <!-- <div class="controls">
+                <button onclick="prevSlide()">Prev</button>
+                <button onclick="nextSlide()">Next</button>
+            </div> -->
+        </div>
+    </div>
+    <hr>
+
+    <div id="contact">
+        <center>
+            <button>contact</button><br><br>
+
+            <a href="">
+                <img class="imgcontact" src="img/telegarm.jpg" alt="telegram">
+            </a>
+            <a href="">
+                <img class="imgcontact" src="img/insta.jpg" alt="linkIn">
+            </a>
+            <a href="">
+                <img class="imgcontact" src="img/Gmail.jpg" alt="Gmail">
+            </a>
+        </center>
+    </div>
+
+
+    <script>
+        let btn= document.querySelectorAll(".")
+    </script>
+
+</body>
+
+</html>
