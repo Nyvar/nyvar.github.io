@@ -6,7 +6,7 @@
   <meta name="description" content="web design">
   <meta name="keywords" content="Developer, Nyvar, web-design">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <style>
     body {
       background-color: black;
@@ -55,7 +55,10 @@
       white-space: nowrap;
       scroll-behavior: smooth;
     }
-    #language ::-webkit-scrollbar { display: none; }
+
+    #language ::-webkit-scrollbar {
+      display: none;
+    }
 
     #language::-webkit-scrollbar {
       display: none;
@@ -66,90 +69,156 @@
       margin-top: 2rem;
     }
 
+    .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+      padding: 0;
+    }
 
-    </style>
+    .social-links i {
+      font-size: 25px;
+    }
+
+    /* General responsive container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Responsive text and spacing */
+    h1,
+    h3,
+    p {
+      word-wrap: break-word;
+    }
+
+    /* Responsive image handling */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+
+      .navbar-collapse {
+        background-color: #111;
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .social-links i {
+        font-size: 3rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .imgcontact {
+        width: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">SiveChanyvar</a>
-            <div class="collapse navbar-collapse justify-content-between">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#aboutme">About me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/Nyvar" target="_blank">Github</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">SiveChanyvar</a>
+      <div class="collapse navbar-collapse justify-content-between">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#aboutme">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="https://github.com/Nyvar" target="_blank">Github</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section class="text-center" style="padding-top: 15%;background-image: url(img/bg.jpg); height: 90vh;">
-        <h1>Software</h1>
-        <h1>Developer</h1>
-        <a href="#contact" class="btn btn-light mt-3">Contact Me</a>
-    </section>
+  <section class="text-center" style="padding-top: 15%;background-image: url(img/bg.jpg); height: 90vh;">
+    <h1>Software</h1>
+    <h1>Developer</h1>
+    <a href="#contact" class="btn btn-light mt-3">Contact Me</a>
+  </section>
 
-    <hr class="bg-light">
+  <hr class="bg-light">
 
-    <section id="aboutme" class="container py-5">
-        <div class="row align-items-stretch">
-            <div class="col-md-4 " style="height: 50vh;">
-                <img src="img/me.JPG" alt="my picture"
-                    class="img-fluid h-100 w-100 border-end border-white object-fit-cover">
-            </div>
-            <div class="col-md-8 h-100" style="text-align:center;">
-                <h3>About Me</h3>
-                <p class="fs-5" style="font-family: Arial; ">
-                    I am known as SiveChanyvar. I major in Software Development at IT STEP ACADEMY. I also studied
-                    Financial Banking at Royal University of Law and Economics. In early 2025, I enrolled in the Sister
-                    of Code web development and UX/UI design employment program.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <hr class="bg-light">
-
-    <section id="language" class="container text-center py-5">
-        <h3>Programing language</h3>
-        <div class="slideshow-container">
-            <img class="slide" src="img/ccharp.jpg" alt="Slide 1">
-            <img class="slide" src="img/c++.jpg" alt="Slide 2">
-            <img class="slide" src="img/js.jpg" alt="Slide 3">
-            <img class="slide" src="img/py.jpg" alt="Slide 4">
-            <img class="slide" src="img/csspic.jpg" alt="Slide 5">
-            <img class="slide" src="img/framer.jpg" alt="Slide 6">
-        </div>
-    </section>
-
-    <hr class="bg-light">
-
-    <div id="project" class="container py-5"></div>
-
-    <section  class="container text-center ">
-        <h3>Some More project</h3>
-        <div  id="moreproj">
-        </div>
-    </section>
-    <section id="contact" class="text-center">
-        <h3>Contact</h3>
-        <div class="d-flex justify-content-center gap-3 mt-3">
-            <a href="#"><img class="imgcontact" src="img/telegarm.jpg" alt="telegram"></a>
-            <a href="#"><img class="imgcontact" src="img/insta.jpg" alt="Instagram"></a>
-            <a href="#"><img class="imgcontact" src="img/Gmail.jpg" alt="Gmail"></a>
-        </div>
-    </section>
+  <section id="aboutme" class="container py-5">
+    <div class="row align-items-stretch">
+      <div class="col-md-4 " style="height: 50vh;">
+        <img src="img/me.JPG" alt="my picture" class="img-fluid h-100 w-100 border-end border-white object-fit-cover">
+      </div>
+      <div class="col-md-8 h-100" style="text-align:center;">
+        <h3>About Me</h3>
+        <p class="fs-5" style="font-family: Arial; ">
+          I am known as SiveChanyvar. I major in Software Development at IT STEP ACADEMY. I also studied
+          Financial Banking at Royal University of Law and Economics. In early 2025, I enrolled in the Sister
+          of Code web development and UX/UI design employment program.
+        </p>
+      </div>
+    </div>
+  </section>
 
 
-    <footer class="text-center">
-        <small>&copy; 2025 SiveChanyvar. All rights reserved.</small>
-    </footer>
-    <script src="index.js"></script>
+  <hr class="bg-light">
+
+  <section id="language" class="container text-center py-5">
+    <h3>Programing language</h3>
+    <div class="slideshow-container">
+      <img class="slide" src="img/ccharp.jpg" alt="Slide 1">
+      <img class="slide" src="img/c++.jpg" alt="Slide 2">
+      <img class="slide" src="img/js.jpg" alt="Slide 3">
+      <img class="slide" src="img/py.jpg" alt="Slide 4">
+      <img class="slide" src="img/csspic.jpg" alt="Slide 5">
+      <img class="slide" src="img/framer.jpg" alt="Slide 6">
+    </div>
+  </section>
+
+  <hr class="bg-light">
+
+  <div id="project" class="container py-5"></div>
+
+  <section class="container text-center ">
+    <h3>Some More project</h3>
+    <div id="moreproj">
+    </div>
+  </section>
+  <section id="contact" class="text-center">
+    <h3>Contact</h3>
+    <ul class="social-links">
+      <li>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </li>
+    </ul>
+  </section>
+
+
+  <footer class="text-center">
+    <small>&copy; 2025 SiveChanyvar. All rights reserved.</small>
+  </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
