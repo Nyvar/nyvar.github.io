@@ -8,7 +8,7 @@ const weather = {
                 <li>The second Tap showing 5 days forecast and if user click on each day it will list down all the
                     forecast of each hour</li>
             </ul>`,
-    code: ""
+    code: "https://github.com/Nyvar/weather.git"
 };
 const pos = {
     name: "Cafe POV systeme",
@@ -31,7 +31,7 @@ const pos = {
                 <li>using passcode 000 will lead you to the add more empployee's page </li>
             </ul>
         </div>`,
-    code: ""
+    code: "https://github.com/Nyvar/SiveChanyvar_finalProject_winform-POS-.git"
 };
 
 let proj = [weather, pos];
