@@ -8,7 +8,7 @@ const weather = {
                 <li>The second Tap showing 5 days forecast and if user click on each day it will list down all the
                     forecast of each hour</li>
             </ul>`,
-    code: "https://github.com/Nyvar/weather.git"
+    code: "https://github.com/Nyvar/weather"
 };
 const bookclub = {
     name: "BookClub website",
@@ -21,7 +21,7 @@ const bookclub = {
                 <li>Blog tab is the tab that are allow user to read blog and upload Blog as text or video</li>
                 <li>Sign in is to sign in and sign up</li>
             </ul>`,
-    code: "https://github.com/Nyvar/bookclub.git"
+    code: "https://github.com/Nyvar/bookclub"
 };
 const pos = {
     name: "Cafe POV systeme",
@@ -44,12 +44,12 @@ const pos = {
                 <li>using passcode 000 will lead you to the add more empployee's page </li>
             </ul>
         </div>`,
-    code: "https://github.com/Nyvar/SiveChanyvar_finalProject_winform-POS-.git"
+    code: "https://github.com/Nyvar/SiveChanyvar_finalProject_winform-POS-"
 };
 
 let proj = [weather, pos, bookclub];
 proj.forEach(project => {
-    generateProjectSide(project.name, project.video, project.detail || "No details provided");
+    generateProjectSide(project.name, project.video, project.detail || "No details provided", project.code);
 });
 function generateProjectSide(title, videos, detail, code) {
   let videoHTML = videos.map(video => `
@@ -71,7 +71,7 @@ function generateProjectSide(title, videos, detail, code) {
         <div class="p-3 border rounded">${detail}</div>
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <a href=${code} target="_blank" class="btn btn-primary">Source Code</a>
+        <a href=${code} target="_blank" class="btn btn-primary" id="source-btn">Source Code</a>
       </div>
     </section>
   `;
