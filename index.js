@@ -10,6 +10,19 @@ const weather = {
             </ul>`,
     code: "https://github.com/Nyvar/weather.git"
 };
+const bookclub = {
+    name: "BookClub website",
+    video: ["video/bookclub.mp4"],
+    detail: `<p>This Website are provide for all the reader to connect with each other all over the world</p><br>
+            <ul>
+                <li>Home Page is a friendly welcoming and some Top nominated club, club runner, genra</li>
+                <li>Find Book tab is all the eBook that are aviable</li>
+                <li>Community tab is the bookclub site</li>
+                <li>Blog tab is the tab that are allow user to read blog and upload Blog as text or video</li>
+                <li>Sign in is to sign in and sign up</li>
+            </ul>`,
+    code: "https://github.com/Nyvar/bookclub.git"
+};
 const pos = {
     name: "Cafe POV systeme",
     video: ["video/casher.mp4","video/admin.mp4"],
@@ -34,7 +47,7 @@ const pos = {
     code: "https://github.com/Nyvar/SiveChanyvar_finalProject_winform-POS-.git"
 };
 
-let proj = [weather, pos];
+let proj = [weather, pos, bookclub];
 proj.forEach(project => {
     generateProjectSide(project.name, project.video, project.detail || "No details provided");
 });
