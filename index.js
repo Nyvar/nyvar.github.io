@@ -71,7 +71,7 @@ function generateProjectSide(title, videos, detail, code) {
         <div class="p-3 border rounded">${detail}</div>
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <a href="${code}" target="_blank" class="btn btn-primary">Source Code</a>
+        <a href=${code} target="_blank" class="btn btn-primary">Source Code</a>
       </div>
     </section>
   `;
