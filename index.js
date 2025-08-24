@@ -79,11 +79,9 @@ function generateProjectSide(title, videos, detail, code) {
 
 
 let moreproj = [
-  { name: "hangman", link: "hangman.html" },
-  { name: "Bookclub", link: "bookclub.html" },
-  { name: "vouge", link: "vouge.html" },
-  { name: "ReadingWithme", link: "read.html" },
-  { name: "ecomercial", link: "ecomercial.html" }
+  { name: "Tamagochi", link: "https://github.com/Nyvar/Tamagochi.git" },
+  { name: "AirPlane Controller", link: "https://github.com/Nyvar/final.git" },
+  { name: "vouge", link: "https://github.com/Nyvar/vouge.github.io.git" }
 ];
 
 moreproj.forEach(project => {
@@ -92,6 +90,6 @@ moreproj.forEach(project => {
 
 function showmoreproj(project) {
   document.getElementById("moreproj").innerHTML += `
-    <a href="${project.link}" target="_blank"><button class="btn btn-success">${project.name}</button></a>
+    <a href=${project.link} target="_blank"><button class="btn btn-success">${project.name}</button></a>
   `;
 }
